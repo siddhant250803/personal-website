@@ -1,24 +1,72 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { ThemeProvider } from './contexts/ThemeContext';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import AboutPage from './pages/AboutPage';
+import ResearchPage from './pages/ResearchPage';
+import ContactPage from './pages/ContactPage';
+import DivingPage from './pages/DivingPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <Router>
+        <div className="App">
+          <Routes>
+            {/* Home page with simplified sections */}
+            <Route path="/" element={
+              <>
+                <Header />
+                <Hero />
+                <About />
+                <Projects />
+                <Contact />
+                <Footer />
+              </>
+            } />
+            
+            {/* Detailed separate pages */}
+            <Route path="/about" element={
+              <>
+                <Header />
+                <AboutPage />
+                <Footer />
+              </>
+            } />
+            
+            <Route path="/research" element={
+              <>
+                <Header />
+                <ResearchPage />
+                <Footer />
+              </>
+            } />
+            
+            <Route path="/contact" element={
+              <>
+                <Header />
+                <ContactPage />
+                <Footer />
+              </>
+            } />
+            
+            <Route path="/diving" element={
+              <>
+                <Header />
+                <DivingPage />
+                <Footer />
+              </>
+            } />
+          </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 
