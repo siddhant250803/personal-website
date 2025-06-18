@@ -81,6 +81,18 @@ const ResearchPage = () => {
 
   const currentResearch = [
     {
+      title: "Multi-Asset Dynamic Portfolio (MADP)",
+      organization: "Independent Research",
+      description: "Developing quantitative trading strategy to dynamically allocate funds between equities, debt and commodities",
+      focus: "Factor Modeling & Portfolio Optimization - 24.5% CAGR (14.5% alpha)"
+    },
+    {
+      title: "End-to-End Adaptive Data-Pipeline Design & Implementation",
+      organization: "Quantitative Research Hedge Fund (Freelance)",
+      description: "Automating data pipeline using Cron, Selenium and MongoDB for real-time financial data processing",
+      focus: "Data Engineering & Infrastructure Automation"
+    },
+    {
       title: "Backtrading Engine Development",
       organization: "Financial Services Lab, Georgia Tech",
       description: "Creating advanced backtesting engine using Monte Carlo simulations and bootstrapping",

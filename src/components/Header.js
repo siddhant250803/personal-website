@@ -43,7 +43,7 @@ const Header = () => {
           <Link to="/research" className="nav-link">Research</Link>
           <Link to="/diving" className="nav-link">Diving</Link>
           <a 
-            href="/Siddhant_Sukhani_resume.pdf" 
+            href={`${process.env.PUBLIC_URL}/Siddhant_Sukhani_resume.pdf`}
             download="Siddhant_Sukhani_Resume.pdf"
             className="nav-link resume-link"
             target="_blank"

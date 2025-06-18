@@ -4,6 +4,20 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Multi-Asset Dynamic Portfolio (MADP)',
+      category: 'Quantitative Trading Strategy',
+      tech: ['Quantitative Finance', 'Factor Modeling', 'Backtesting', 'Risk Management'],
+      description: 'Developing quantitative trading strategy to dynamically allocate funds between equities, debt and commodities. Integrating regressive factor modeling and backtrading with stress testing to generate 24.5% CAGR (14.5% alpha).',
+      link: '#'
+    },
+    {
+      title: 'End-to-End Adaptive Data-Pipeline Design & Implementation',
+      category: 'Data Engineering & Automation',
+      tech: ['Python', 'Cron', 'Selenium', 'MongoDB', 'Data Pipeline'],
+      description: 'Freelancing with quantitative research hedge fund to automate data pipeline using Cron, Selenium and MongoDB. Building scalable, adaptive infrastructure for real-time financial data processing and analysis.',
+      link: '#'
+    },
+    {
       title: 'SubjECTive-QA Dataset',
       category: 'NLP Research',
       tech: ['Python', 'NLP', 'Machine Learning'],
